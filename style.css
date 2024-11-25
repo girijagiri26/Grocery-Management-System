@@ -1,0 +1,206 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;  /* Ensures the background image covers the entire page */
+    color: #fff;  /* Text color */
+    line-height: 1.6;  /* Line height for better readability */
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background for the header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff9900;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+ul li {
+    padding: 10px;
+    background: #ff9900;
+    margin-bottom: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+ul li.success {
+    background: #4caf50;
+}
+
+ul li.error {
+    background: #f44336;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for the table */
+    color: #fff; /* White text color */
+    border-radius: 10px; /* Slight border radius for a modern look */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #fff; /* White borders to make the table stand out */
+    font-size: 1.1rem;
+}
+
+th {
+    background-color: #2196f3; /* Bright blue for table headers */
+    color: #fff; /* White text in headers */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #333; /* Dark background for even rows for contrast */
+}
+
+tr:nth-child(odd) {
+    background-color: #444; /* Lighter dark color for odd rows */
+}
+
+tr:hover {
+    background-color: #ff9800; /* Vibrant orange for hover effect */
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Edit Button Styles */
+.btn-edit {
+    color: white;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Delete Button Styles */
+.btn-delete {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+
+/* Generate Bill Button Styles */
+.btn-generate-bill {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.btn-generate-bill:hover {
+    background-color: #1e88e5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    table, th, td {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
